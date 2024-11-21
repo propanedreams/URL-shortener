@@ -1,10 +1,11 @@
 URL Shortener - Flask Application
 
-This is a basic URL Shortener application built with Flask. It allows you to shorten long URLs and access them via short URLs.
+This is a basic URL Shortener application built with Flask. It allows you to shorten long URLs and access them via short URLs. This is a personal project which will get better with time
 Features
 
     Shorten a URL: Converts a long URL into a short URL.
     Redirect: Access the original URL using the short URL.
+    Using sqlite as storage.
     Debugging: View all stored URL mappings.
 
 Prerequisites
