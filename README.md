@@ -82,3 +82,14 @@ Short URL Not Found:
 
     Ensure the short URL exists in the mappings.
     Restarting the app clears the mappings unless persistence is added.
+
+
+WINDOWS
+Invoke-WebRequest -Uri http://localhost:5000/shorten `
+                  -Method POST `
+                  -Headers @{ "Content-Type" = "application/json" } `
+                  -Body '{"long_url": "xxx"}'
+
+
+LINUX
+curl -X POST -H "Content-Type: application/json" -d '{"long_url": "xxx"}' http://localhost:5000/shorten
