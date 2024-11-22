@@ -1,6 +1,7 @@
 URL Shortener - Flask Application
 
-This is a basic URL Shortener application built with Flask. It allows you to shorten long URLs and access them via short URLs. This is a personal project which will get better with time
+This is a basic URL Shortener application built with Flask. It allows you to shorten long URLs and access them via short URLs. 
+This is a personal project which will get better with time
 Features
 
     Shorten a URL: Converts a long URL into a short URL.
@@ -85,6 +86,7 @@ Short URL Not Found:
 
 
 WINDOWS
+
 Invoke-WebRequest -Uri http://localhost:5000/shorten `
                   -Method POST `
                   -Headers @{ "Content-Type" = "application/json" } `
@@ -92,4 +94,5 @@ Invoke-WebRequest -Uri http://localhost:5000/shorten `
 
 
 LINUX
+
 curl -X POST -H "Content-Type: application/json" -d '{"long_url": "xxx"}' http://localhost:5000/shorten
