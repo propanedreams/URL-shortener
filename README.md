@@ -45,7 +45,6 @@ Response:
       "short_url": "http://localhost:5000/abc123",
       "long_url": "https://example.com"
     }
-
 Example Command:
 
 curl -X POST -H "Content-Type: application/json" -d '{"long_url": "https://example.com"}' http://localhost:5000/shorten
